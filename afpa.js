@@ -1,29 +1,40 @@
-var nbre = prompt("Saisir un nombre");
-console.log(nbre);
-var estPremier = true;
+afpa();
 
-for (var i = 2; i < nbre; i++) {
-    if (nbre %i == 0) {
-        console.log(nbre+ "est pas premier car il est divible par",i);
-        estPremier = false;
-        break;
+function afpa() {
+    console.log(5*2);
+}
+var test = prompt("un nombre");
+//convertir en entier naturel
+//test = parseInt(test);
+//console.log(test);
+//Convertir en nombre décimaux
+test = parseFloat(test);
+console.log(test);
+
+afpa_v2(test,100);
+
+function afpa_v2(nbre1, nbre2) {
+    //console.log(nbre1*nbre2);
+
+    if (nbre1 < 0) {
+        var calcul = nbre1*nbre2;
+        test =calcul/2;
+        
+        return false;
     }
-}
-if(estPremier){
-    console.log('estPremier');
+    
+    return false;
+    return (nbre1*nbre2)/2;
 }
 
-// for (var index = 2; index < nbre; index++) {
-//     if (nbre % index == 0) {
-//         console.log(nbre+ "n'est pas premier");
-//         //estPremier = false;
-//         break;
-//     }
-//     if (index == nbre-1) {   
-//         console.log(nbre+ "est  premier");
-//         break;
-//         //estPremier = true;
-//     }
-    
-// }
-//console.log(estPremier);
+console.log(moussa);
+
+var moussa = function () {
+    console.log("Je suis la fonction moussa");
+}
+
+
+//console.log(moussa);
+
+//afpa();
+
