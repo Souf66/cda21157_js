@@ -1,40 +1,75 @@
-afpa();
-
-function afpa() {
-    console.log(5*2);
-}
-var test = prompt("un nombre");
-//convertir en entier naturel
-//test = parseInt(test);
-//console.log(test);
-//Convertir en nombre décimaux
-test = parseFloat(test);
-console.log(test);
-
-afpa_v2(test,100);
-
-function afpa_v2(nbre1, nbre2) {
-    //console.log(nbre1*nbre2);
-
-    if (nbre1 < 0) {
-        var calcul = nbre1*nbre2;
-        test =calcul/2;
-        
-        return false;
-    }
+// function addition(chiffre1,chiffre2,chiffre3) {
+//     var calcul = chiffre1+chiffre2+chiffre3;
     
-    return false;
-    return (nbre1*nbre2)/2;
+//     return calcul;
+// }
+function addition(...chiffres) {
+    var resultat=0;
+    chiffres.forEach(chiffre => {
+        //resultat += chiffre;
+        resultat = resultat +chiffre;
+    });
+    // Autre méthode
+    // for (var index = 0; index < chiffres.length; index++) {
+    //     console.log(" BOUCLE FOR: "+chiffres[index]); 
+    // }
+    return resultat;
 }
 
-console.log(moussa);
+console.log(   addition(5,15,25)   );
+console.log(   addition(15,25)   );
+console.log(   addition(25)   );
 
-var moussa = function () {
-    console.log("Je suis la fonction moussa");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function multiplication(nbre) {
+    //nombre = 5;
+    var resultat="";
+    for(var index=1; index <= 10; index++){
+        //resultat += nbre,"*",index,"=",nbre*index;
+       resultat += nbre+"*"+index+"="+nbre*index+"\n";
+        //resultat = resultat + nbre,"*",index,"=",nbre*index;
+        //console.log(nbre,"*",index,"=",nbre*index);
+    }
+    //console.log(resultat);
+    return resultat;
 }
 
-
-//console.log(moussa);
-
-//afpa();
-
+//var nombre = prompt("Saisir un nombre");
+//console.log(multiplication(nombre));
