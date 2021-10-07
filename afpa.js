@@ -1,75 +1,45 @@
-// function addition(chiffre1,chiffre2,chiffre3) {
-//     var calcul = chiffre1+chiffre2+chiffre3;
-    
-//     return calcul;
-// }
-function addition(...chiffres) {
-    var resultat=0;
-    chiffres.forEach(chiffre => {
-        //resultat += chiffre;
-        resultat = resultat +chiffre;
+
+// console.log("Paris");
+
+// function () {
+//     var n = prompt("Un nombre");
+//     var x = prompt("Un nombre");
+//     console.log( n+x)
+// })();
+
+
+
+var afpa = "Paris";
+var afpa = "75";
+console.log(afpa);
+
+//AVEC LET
+let afpa1 = "Paris";
+let afpa2 = "75";
+
+console.log(afpa1);
+/*
+if (4<5){
+    let test = 5;
+    console.log("Dans le if "+test);
+}
+console.log("En dehors:"+test);*/
+
+const array1 = ['a', 'b', 'c'];
+
+array1.forEach(element => {console.log(element) });
+
+var etudiants = [
+                    ['Moussa', 9],
+                    ['Homer', 11],
+                    ['Jean', 12],
+                    ['Dujardin', 11],
+                    ['Miha', 17]
+            ];
+    etudiants.forEach(element => {
+        console.log(element);
+        element.forEach(el => {
+            console.log("Dans le 2eme forEach:"+el);
+            
+        });
     });
-    // Autre méthode
-    // for (var index = 0; index < chiffres.length; index++) {
-    //     console.log(" BOUCLE FOR: "+chiffres[index]); 
-    // }
-    return resultat;
-}
-
-console.log(   addition(5,15,25)   );
-console.log(   addition(15,25)   );
-console.log(   addition(25)   );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function multiplication(nbre) {
-    //nombre = 5;
-    var resultat="";
-    for(var index=1; index <= 10; index++){
-        //resultat += nbre,"*",index,"=",nbre*index;
-       resultat += nbre+"*"+index+"="+nbre*index+"\n";
-        //resultat = resultat + nbre,"*",index,"=",nbre*index;
-        //console.log(nbre,"*",index,"=",nbre*index);
-    }
-    //console.log(resultat);
-    return resultat;
-}
-
-//var nombre = prompt("Saisir un nombre");
-//console.log(multiplication(nombre));
